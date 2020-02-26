@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				background:url(img/1.jpg);
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			.app {
+				
+			}
+			.cideo-wrapper {
+				position: relative;
+				overflow: hidden;
+				top: 0;
+				left: 0; 
+				width: 100%;
+				margin: 0 auto 70px auto;
+				/*height: 600px;*/
+			}
+			.video-wrapper video {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+			.block-list-wrapper{
+				position: absolute;
+				top: 0;
+				right:0;
+				width: 360px;
+				height: 100%;
+				/*background: rgba(0,0,255,1);*/
+			}
+			.info-adress-all-wrapper{
+				width: 360px;
+				height: 90px;
+			}
+			.info-adress-wrapper{
+				width: 50%;
+				height: 90px;
+				float: left;
+			}
+			.info-adress-wrapper h2{
+				padding-top: 10px;
+				color: #fff;
+				font-size: 36px;
+				font-weight: 900;
+				text-align: center;
+			}
+			.info-adress-wrapper p{
+				color: #fff;
+				font-weight: 900;
+				text-align: center;
+			}
+			.shanghai{
+				background:  #ff9e56;
+			}
+			.shanghai::after{
+				content: '<';
+				top: 27px;
+				position: absolute;
+				font-size: 36px;
+				left: 10px;
+				font-weight: 900;
+				color: #fff;
+			}
+			.shanghai:before{
+				/*content: "SHANGHAI";
+				width: 360px;
+				font-size: 45px;
+				color: #fff;*/
+			}
+			.chengdu {
+				background: #ff7474;
+			}
+			.chengdu::after{
+				content: '>';
+				top: 27px;
+				position: absolute;
+				font-size: 36px;
+				right: 10px;
+				font-weight: 900;
+				color: #fff;
+			}
+			.info-adress-new-wrapper {
+				width: 330px;
+				height: 20px;
+				background: #fff;
+				padding: 15px;
+			}
+			.new-wrapper{
+				width: 50px;
+				heigth: 20px;
+				background: #0ebdca;
+				float: left;
+				text-align: center;
+				margin-right: 10px;
+			}
+			.info-wrapper{
+				width: 270px;
+				height: 24px;
+				float: left;
+				overflow: hidden;
+				
+			}
+			.main-wrapper {
+				width: 360px;
+				height: 70%;
+				/*height: 400px;*/
+				text-align: center;
+				background: url(img/mainBg.png) no-repeat;
+			}
+			.main-wrapper img {
+				padding-top: 20px;
+			}
+			.main-wrapper h2 {
+				padding-top: 20px;
+				color: #fff;
+				font-size: 56px;
+				font-weight: 900;
+			}
+			.main-wrapper p {
+				padding-top: 10px;
+				color: #fff;
+				font-size: 36px;
+				font-weight: 900;
+			}
+			.block-inner {
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.block-head {
+				text-align: center;
+				padding-bottom: 40px;
+			}
+			.block-head h4{
+				font-weight: 400;
+			}
+			.block-content {
+				width: 1200px;
+				overflow: hidden;
+				margin: 0 auto;
+			}
+			.column{
+				height: 20%;
+				/*height: 100%;*/
+				background: #f9568a;
+				text-align: center;
+			}
+			.column h4 {
+				padding-top: 20px;
+				color: #fff;
+				font-weight: 900;
+				font-size: 36px;
+			}
+			.column p {
+				padding: 20px;
+				color: #fff;
+				font-weight: 900;
+			}
+			.play-video {
+				width: 850px;
+				float: left;
+				padding-right: 20px;
+				margin-bottom: 150px;
+			}
+			
+			.play-video video{
+				width: 100%;
+			}
+			.info-box {
+				width: 330px;
+				height: 478px;
+				/*background: red;*/
+				float: left;
+				overflow: auto;
+			}
+			.info-box .video-card {
+				width: 300px;
+				height: 150px;
+				margin-bottom: 10px;
+				background: #0f0;
+			}
+			.video-card img{
+				width: 300px;
+				height: 150px;
+			}
+			ul, li {
+				list-style: none;
+			}
+			.info-box::-webkit-scrollbar-thumb {
+				border-radius: 5px;
+				background: #2abfdb;
+			}
+		</style>
+	</head>
+	<body><!---   4.16vw  相对单位-->
+		<div class="app">
+			<div class="cideo-wrapper">
+				<video  autoplay="true" loop style="width: 100%;" > <!-- autoplay 自动播放   loop controls="controls"显示控件-->
+					<source src="img/bg.mp4" type="video/mp4"  />
+				</video>
+               <div class="block-list-wrapper">
+                	<div class="info-adress-all-wrapper">
+                    	<div class="info-adress-wrapper shanghai">
+                        	<h2>上海站</h2>
+                            <p>10.4至10.6</p>
+                        </div>
+                        <div class="info-adress-wrapper chengdu">
+                        	<h2>成都站</h2>
+                            <p>12.21至12.22</p>
+                        </div>
+                    </div>
+                    <div class="info-adress-new-wrapper">
+                    	<div class="new-wrapper">NEW</div>
+                        <div class="info-wrapper">(ﾉﾟ∀ﾟ)ﾉ 看到下面的粉↓色↓方↓块↓了吗？↓↓↓↓↓↓↓↓↓↓↓</div>
+                    </div>
+                    <div class="main-wrapper">
+                    	<img src="img/m1.png"/>
+                        <h2>广州站</h2>
+                        <p>保利世贸博览馆</p>
+                        <p>8.16-8.18</p>
+                    </div>
+                    <div class="column"> 
+                    	<h4>收藏购票页</h4>
+                    	<p>06月28日 20:00开放预购</p>
+                    </div>
+                </div>
+			</div>
+			<div class="block-inner">
+				<div class="block-head">
+					<h2>相关视频</h2>
+					<h4>相关视频会定期更新哟</h4>
+				</div>              
+			</div>
+			<div class="block-content">
+				<div class="play-video">
+					<video controls><!--autoplay -->
+						<source src="img/play.mp4" type="video/mp4"></source>
+					</video>
+				</div>
+				<div class="info-box">
+					<ul>
+						<li class="video-card"><img src="img/h1.webp" /></li>
+						<li class="video-card"><img src="img/h2.webp" /></li>
+						<li class="video-card"><img src="img/h3.webp" /></li>
+						<li class="video-card"><img src="img/h4.webp" /></li>
+						<li class="video-card"><img src="img/h5.webp" /></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

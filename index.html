@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        * {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          text-decoration: none;
+        }
+        body {
+          background: url(img/bgground.jpg) no-repeat ;
+          background-attachment: fixed!important;
+          background-size: cover!important;
+          /*background-repeat: no-repeat!important;
+          background-position: center!important;*/
+        }
+
+        
+        .nav-container {
+          height: 50px;
+          background: rgba(0,0,0,.3);
+        }
+        .nav-menu {
+          width: 1200px;
+          margin: 0 auto;
+        }
+		.nav-menu i {
+			height: 47px;
+			width: 20px;
+			/*background: red;*/
+			background: url(img/icons.png) -920px -70px no-repeat;
+			float: left;
+		}
+        .nav-menu ul {
+          width: 600px;
+          height: 50px;
+		  float: left;
+        }
+        .nav-menu ul li {
+          display: block;
+          float: left;
+        }
+        .nav-menu ul li a{
+          display: block;
+          height: 47px;
+          line-height: 47px;
+          padding: 0 10px;
+          color: #fff;
+		  text-decoration: none;
+        }
+        .nav-menu ul li a:hover {
+          border-bottom: 3px solid #fff;
+        }
+        .main {
+          width: 1100px;
+          margin: 0 auto;
+        }
+        .main-img {
+          width: 1000px;
+          height: 300px;
+          margin: 0 auto;
+          text-align: center;
+          line-height: 400px;
+        }
+        .main-img img {
+					width: 220px;
+          transition: .5s;
+        }
+        .main-img img:hover {
+          transform: rotateZ(-10deg) scale(1.5);
+        }
+        .main-button {
+          width: 600px;
+          height: 60px;
+          margin: 0 auto;
+          position: relative;
+          transition: .5s;
+          background: rgba(0,0,0,.5);
+		  margin-bottom: 80px;
+		  border: 1px solid rgba(0,0,0,0);
+        }
+        .main-button input {
+          width: 558px;
+          height: 60px;
+          padding: 0 12px 0 30px;
+          border: none;
+          background: none;
+          color: white;
+        }
+        .main-button:hover {
+          transform: scale(1.5);
+          border: 1px solid #3498db;
+          background: black;
+        }
+        .main-button .main-button-ico{
+          width: 32px;
+          height: 32px;
+          position: absolute;
+          background: url(img/icons.png) -653px -720px ; /* -780px -720px*/
+          right: 20px;
+          top: 15px;
+          transition: .2s;
+        }
+		
+		.nav-title {
+			height: 70px;
+			background: rgba(0,0,0,.5);
+			margin-bottom: 80px;
+			border: 1px solid rgba(0,0,0,0);
+		}
+		.nav-title:hover{
+			border: 1px solid #3498db;
+		}
+		.nav-title ul li {
+			padding: 0px 14px;	
+			float: left;
+		}
+		.nav-title ul li .s_icon {
+			display:block;
+			height: 20px;
+			width: 20px;
+			margin: 10px 0 0 0px;
+			/*background: red;*/
+		}
+		.nav-title ul li span {
+			margin: 10px 0 5px 0;
+			text-align: center;
+			display: block;
+			height: 15px;
+			font-size: 12px;
+			color: #eee;
+			font-family: "幼圆";
+			background: #09C;
+			border-radius: 5px;
+		}
+		.nav-title ul li a {
+			display:block;
+			color: white;
+			font-size: 12px;
+		}
+		.nav-menu span{
+			float: right;
+		}
+		.nav-menu span a{
+			display: block;
+			height: 47px;
+			text-decoration: none;
+			color: white;
+			line-height: 47px;
+		}
+		.con_box1 {
+			width: 1100px;
+			height: 260px;
+			background: rgba(0,0,0,.5);
+			border: 1px solid rgba(0,0,0,0);
+		}
+		.con_box1:hover {
+			border: 1px solid #3498db;
+		}
+		.con_box1 .con-img{
+			float: left;
+		}
+		.con_box1 .con-img img {
+			height: 220px;
+			width: 390px;
+			padding: 20px;
+			float: left;
+		}
+		.con_box1 .con-content{
+			width: 670px;
+			height: 260px;
+			float: left;
+		}
+		.con_box1 .con-content li a{
+			display:block;
+		}
+		.con_box1 .con-content img{
+			height: 100px;
+    		width: 150px;
+		}
+		/*.con_box1 .con-content {
+			float: left;
+		}*/
+		.con_box1 .con-content ul {
+			height: 260px;
+			width: 670px;
+		}
+		.con_box1 .con-content li{
+  		 	padding: 20px 5px 0 5px;
+			float: left;
+			/*width: 150px;
+			height: 100px;*/
+			position: relative;
+		}
+		.con_box1 .con-content li:hover .item{
+			/*display: block;*/
+			height: 100px;
+		}
+		.con_box1 .con-content .item{
+			/*display: none;*/
+			display: block;
+			width: 150px;
+			height: 24px;
+			overflow: hidden;
+			position: absolute;
+			text-align: center;
+			bottom: 4px;
+			color: #fff;
+			background: rgba(0,0,0,.5);
+			transition: 0.3s;
+		}
+    </style>
+  </head>
+  <body>
+    <!-- <img src="img/bgground.jpg" style=" z-index: -5; width:100%; "/> -->
+      <div class="nav-container">
+          <div class="nav-menu">
+            <ul>
+              <li><a href="index.html"><i></i>首页</a></li>
+              <li><a href="#">音频</a></li>
+              <li><a href="#">游戏中心</a></li>
+              <li><a href="platform\platform.html">会员购</a></li>
+			  <li><a href="BW/guanzhu.html">FW</a></li>
+              <li><a href="#">漫画</a></li>
+              <li><a href="#">直播</a></li>
+            </ul>
+            <span><a href="Land/land.html">登录|注册</a></span>
+          </div>
+      </div>
+
+      <div class="main">
+      
+          <div class="main-img">
+            <img src="img/biliLogo.png"/>
+          </div>
+          <div class="main-button">
+            <input type="text" />
+            <!-- <button class="main-button-ico"></button> -->
+            <div class="main-button-ico">
+              <!-- <img src="img/search.png" /> -->
+            </div>
+          </div>
+          
+          <div class="nav-title">
+          	<ul>
+            	<li><i class="s_icon" style="background: url(img/indexIcon.png) 2px 0 no-repeat;"></i><a href="#">首页</a></li>
+                <li><span>976</span><a href="#">动漫</a></li>
+                <li><span>49</span><a href="#">番剧</a></li>
+                <li><span>68</span><a href="#">国创</a></li>
+                <li><span>999+</span><a href="#">音乐</a></li>
+                <li><span>230</span><a href="#">舞蹈</a></li>
+                <li><span>999+</span><a href="#">游戏</a></li>
+                <li><span>999+</span><a href="#">科技</a></li>
+                <li><span>238</span><a href="#">数码</a></li>
+                <li><span>999+</span><a href="#">生活</a></li>
+                <li><span>73</span><a href="#">鬼畜</a></li>
+                <li><span>363</span><a href="#">时尚</a></li>
+                <li><span>51</span><a href="#">广告</a></li>
+                <li><span>999+</span><a href="#">娱乐</a></li>
+                <li><span>999+</span><a href="#">影视</a></li>
+                <li><span>999+</span><a href="#">放映厅</a></li>
+                <li><i class="s_icon" style="background: url(img/icons.png) -85px -1815px no-repeat;"></i><a href="#">专栏</a></li>
+                <li><i class="s_icon" style="background: url(img/icons.png) -85px -2007px no-repeat;"></i><a href="#">广场</a></li>
+                <li><i class="s_icon" style="background: url(img/icons.png) -85px -1879px no-repeat;"></i><a href="#">直播</a></li>
+                <li><i class="s_icon" style="background: url(img/icons.png) -85px -1942px no-repeat;"></i><a href="#">小黑屋</a></li>
+            </ul>
+          </div>
+          
+          <div class="con_box1">
+          		<div class="con-img">
+                	<img src="img/008.jpg" />
+                </div>
+								
+               <div class="con-content">
+                 <ul>
+                 	<li><a href="#">
+                    	<img src="img/001.jpg"/>
+                        <span class="item">辉夜大小姐<br/>想让我告白~天才们的恋爱头脑战~</span>
+                     </a></li>
+                    <li><a href="#"><img src="img/002.jpg"/><span class="item">11111</span></a></li>
+                    <li><a href="#"><img src="img/003.jpg"/><span class="item">11111</span></a></li>
+                    <li><a href="#"><img src="img/004.jpg"/><span class="item">11111</span></a></li>
+                    <li><a href="#"><img src="img/005.jpg"/><span class="item">11111</span></a></li>
+                    <li><a href="#"><img src="img/006.jpg"/><span class="item">11111</span></a></li>
+                    <li><a href="#"><img src="img/007.jpg"/><span class="item">11111</span></a></li>
+                    <li><a href="#"><img src="img/008.jpg"/><span class="item">11111</span></a></li>
+                 </ul>
+                </div>
+          </div>
+      </div>
+  </body>
+</html>

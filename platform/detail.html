@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>datail</title>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	li, ul {
+		list-style: none;
+	}
+	.nav_head_wrapper {
+		height: 60px;
+		background: #fff;
+	}
+	.nav_head {
+		width: 1160px;
+		height: 60px;
+		margin: 0 auto;
+		/*position: relative;*/
+		display: flex;
+		align-items: center;
+	}
+	.nav_head_logo {
+		width: 130px;
+		height: 27px;
+		background: url(img/logo.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	.nav_head_TV_logo{
+		background: url(img/icon1.png) no-repeat;
+		width: 18px;
+		height: 18px;
+		background-size: 100% 100%;
+		margin-left: 40px;
+		margin-right: 4px;
+	}   
+	
+	.nav_head_text1 {
+		height: 14px;
+		font-size: 14px;
+		color: #636c7b;
+		line-height: 14px;
+		width: 60px;
+	}
+	.nav_header_search {
+		width: 380px;
+		height: 40px;
+		position: relative;
+		margin-left: 300px;
+		margin-right: 25px;
+	}
+	.nav_header_search_bar {
+		font-size: 12px;
+		color: #6d757a;
+		line-height: 14px;
+		width: 360px;
+		height: 40px;
+		border: none;
+		padding-left: 20px;
+		background: #f1f3f5;
+		border: none;
+		border-radius: 40px;
+	}
+	.nav_header_search_icon {
+		height: 18px;
+		width: 18px;
+		transform: translateY(-50%);
+		background: url(img/icon2.png);
+		background-size: 100% 100%;
+		top: 50%;
+		right: 12px;
+		position: absolute;
+	}
+	.nav-header-register , .nav-header-login {
+		/*width: 28px;*/
+	}
+	.nav-header-liner {
+		margin: 0 1px;
+		width: 1px;
+		height: 12px;
+		background: #636c7b;
+	}
+	.nav-header-register a,.nav-header-login a{
+		font-size: 12px;
+		color: #636c7b;
+		line-height: 25px;
+	}
+	.nav_head .order-and-icon {
+		z-index: 100;
+		font-size: 14px;
+		color: #636c7b;
+		line-height: 14px;
+		width: 60px;
+		margin-left: 20px;
+	}
+	a {
+		text-decoration: none;
+	}
+	.order-and-icon {
+		width: 92px;
+		height: 18px;
+	}
+	/**/
+	li, ul{
+		list-style: none;
+	}
+	body, html {
+		font-size: 12px;
+		color: #222;
+		font-family: Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif!important;
+	}
+	.buyticket {
+		background: #fff;
+		width: 100%;
+		padding-bottom: 58px;
+	}
+	.bread-wrapper {
+		width: 1160px;
+		margin: auto;
+		background: #fff;
+		padding: 10px;
+		display: flex;
+		align-items: center;
+	}
+	.bread-wrapper span {
+		color: #000;
+		font-size: 12px;
+		margin-right: 5px;
+	}
+	.bread-wrapper span.symbol {
+		margin-bottom: 1px;
+	}
+	a {
+		color: #222;
+		text-decoration: none;
+	}
+	.bread-wrapper .project-name {
+		color: #99a2aa;
+	}
+	.bread-wrapper span {
+		color: #000;
+		font-size: 12px;
+		margin-right: 5px;
+	}
+	.whole-detail-info-wrapper {
+		background: #fff;
+		width: 1160px;
+		margin: auto;		
+		display: flex;
+	}
+	.whole-detail-info-wrapper .detail-img-icon {
+		margin-right: 20px;
+		width: 300px;
+		height: 400px;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		box-shadow: 0 1px 2px 0 rgba(0,0,0,.5), 0 4px 8px 0 rgba(0,0,0,.4);
+		border-radius: 4px;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper {
+		width: 840px;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .product-info-name {
+		font-size: 18px;
+	}
+	.product-info-time-wrapper {
+		margin-top: 30px;
+		display: flex;
+		align-items: center;
+	}
+	.product-info-time-wrapper .product-info-time-title {
+		font-size: 14px;
+		color: #99a2aa;
+		line-height: 14px;
+		margin-right: 15px;
+	}
+	.product-info-time-wrapper .product-info-time {
+		font-size: 14px;
+		color: #222;
+		line-height: 14px;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .vuene-wrapper {
+		padding-bottom: 8px;
+		margin-top: 10px;
+		align-items: center;
+		display: flex;
+		border-bottom: 1px dashed #e7ecf1;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .vuene-wrapper .title {
+		line-height: 38px;
+		font-size: 14px;
+		color: #99a2aa;
+		margin-right: 15px;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .vuene-wrapper .vuene-info-content {
+		display: flex;
+		align-items: center;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .vuene-wrapper .vuene-info-content .vuene-name {
+		font-size: 14px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		max-width: 430px;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .vuene-wrapper .vuene-info-content .address-name {
+		margin-right: 5px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		margin-left: 10px;
+		font-size: 12px;
+		color: #99a2aa;
+		line-height: 14px;
+		max-width: 250px;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .vuene-wrapper .address-icon {
+		margin-left: 15px;
+		margin-right: 5px;
+		width: 15px;
+		height: 15px;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-image: url(img/icon6.png);
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .clearfix.mr4 {
+		margin-top: 14px;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .vuene-wrapper .vuene-info-content .check-map {
+		flex: 1;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .vuene-wrapper .check-map {
+		cursor: pointer;
+		font-size: 12px;
+		color: #6d757a;
+		line-height: 14px;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .clearfix {
+		display: flex;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .clearfix .title {
+		line-height: 38px;
+		font-size: 14px;
+		color: #99a2aa;
+		margin-right: 15px;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .clearfix .screens,
+    .whole-detail-info-wrapper .detail-info-wrapper .clearfix .tickets {
+		flex: 1;
+	}
+	.selectable-option {
+		display: inline-block;
+		position: relative;
+		height: 38px;
+		line-height: 38px;
+		text-align: center;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		padding: 0 30px;
+		border: 1px solid #ccd0d7;
+		border-radius: 4px;
+	}
+	/*.clearfix:after {
+		display: block;
+		visibility: hidden;
+		font-size: 0;
+		clear: both;
+		width: 0;
+		height: 0;
+		content: ".";
+	}*/
+	.selectable-option.active {
+		height: 38px;
+		line-height: 38px;
+		color: #f25d8e;
+		border: 1px solid #f25d8e;
+		box-shadow: inset 0 0 0 1px #f25d8e;
+	}
+	.selectable-option.active:before {
+		display: inline-block;
+		position: absolute;
+		content: "";
+		font-size: 0;
+		line-height: 0;
+		width: 6px;
+		height: 4px;
+		right: 1px;
+		bottom: 3px;
+		border: 1px solid #fff;
+		border-width: 0 0 2px 2px;
+		transform: rotate(-43deg);
+		z-index: 10;
+	}
+	.selectable-option.active:after {
+		position: absolute;
+		content: "";
+		font-size: 0;
+		width: 0;
+		height: 0;
+		bottom: 0;
+		right: 0;
+		border-style: solid;
+		border-width: 0 0 18px 18px;
+		border-color: transparent transparent #f25d8e;
+	}
+	/*.selectable-option:hover {
+		
+	}*/
+	
+	
+	/*  数量 start*/
+	.whole-detail-info-wrapper .detail-info-wrapper .clearfix {
+		margin-top: 10px;
+		display: flex;
+	}
+	.whole-detail-info-wrapper .detail-info-wrapper .clearfix .num-content {
+		display: flex;
+	}
+	.ticket-count {
+		display: flex;
+		align-items: center;
+		height: 38px;
+		border-radius: 3px;
+		border: 1px solid #ccd0d7;
+		width: 158px;
+		line-height: 38px;
+	}
+	.ticket-count .count-reduce {
+		margin-left: 13px;
+		width: 14px;
+		height: 14px;
+		cursor: pointer;
+		border-top-left-radius: .133rem;
+		border-bottom-left-radius: .133rem;
+	}
+	.ticket-count .count-number {
+		flex: 1;
+		width: 1.44rem;
+		height: 1.013rem;
+		line-height: 1.013rem;
+		left: 1.013rem;
+		text-align: center;
+	}
+	.ticket-count .count-plus {
+		margin-right: 13px;
+		position: relative;
+		right: 0;
+		border-top-right-radius: .133rem;
+		border-bottom-right-radius: .133rem;
+		width: 14px;
+		height: 14px;
+		cursor: pointer;
+	}
+	.ticket-count .count-reduce {
+		width: 14px;
+		height: 14px;
+		background: url(img/icon11.png) no-repeat;
+		background-size: 100% 100%;/*contain*/
+	}
+	.ticket-count .count-plus {
+		width: 14px;
+		height: 14px;
+		background: url(img/icon12.png) no-repeat;
+		background-size: 100% 100%;/*contain*/
+	}
+	.whole-detail-info-wrapper .product-buy-wrapper {
+		margin-left: 57px;
+		margin-top: 30px;
+		display: flex;
+	}
+	.buyticket .product-buy.enable {
+		color: #fff;
+		background: linear-gradient(-48deg,#ff6a9c,#fe8574);
+		box-shadow: 0 3px 4px 0 #fdb8cc;
+	}
+	.buyticket .product-buy {
+		width: 240px;
+		height: 50px;
+		text-align: center;
+		font-size: 16px;
+		line-height: 50px;
+		border-radius: 3px;
+		cursor: pointer;  /* 有文字 变成手 点击图案*/
+		background: #e4eaef;
+	}
+	.whole-detail-info-wrapper .product-buy-wrapper .want-wrapper {
+		width: 240px;
+		height: 50px;
+		margin-left: 17px;
+		cursor: pointer;
+	}
+	.whole-detail-info-wrapper .product-buy-wrapper .want-wrapper .want-icon {
+		float: left;
+		width: 22px;
+		height: 22px;
+		margin: 14px 5px 14px 0;
+		background: url(img/icon13.png) 50% no-repeat;
+		background-size: 16px 16px;
+	}
+	.whole-detail-info-wrapper .product-buy-wrapper .want-wrapper .want-content {
+		position: relative;
+	}
+	.whole-detail-info-wrapper .product-buy-wrapper .want-wrapper .want-content p {
+		font-size: 12px;
+		line-height: 50px;
+		color: #212121;
+		cursor: default; /* 变成箭头 */
+	}
+</style>
+</head>
+<body>
+	<div class="nav_head_wrapper">
+		<div class="nav_head">
+			<div class="nav_head_logo"></div>
+			<div class="nav_head_TV_logo"></div>
+			<div class="nav_head_text1">主站</div>
+			<div class="nav_header_search">
+				<input type="text" placeholder="活动、嘉宾、场馆" class="nav_header_search_bar" />
+				<div class="nav_header_search_icon" /></div>
+			</div>
+			<div class="nav-header-register"><a href="#">注册</a></div>
+			<div class="nav-header-liner"></div>
+			<div class="nav-header-login"><a href="#">登录</a></div>
+			<div class="order-and-icon">订单中心</div>
+		</div>
+	</div>
+	
+	
+<div class="buyticket">
+    <div class="bread-wrapper">
+        <span><a href="#">Bilibili</a></span> 
+        <span class="symbol">&gt;</span> 
+        <span><a href="#">会员购</a></span> 
+        <span class="symbol">&gt;</span> 
+        <span class="project-name">合肥·第七届次元之门动漫游戏嘉年华</span>
+    </div>
+    
+    <div class="whole-detail-info-wrapper">
+    	<div class="detail-img-icon no_pic" style="background-image: url(img/commodity.jpeg);"></div> 
+        <div class="detail-info-wrapper">
+        	<div class="product-info-name">合肥·第七届次元之门动漫游戏嘉年华</div> 
+            <div class="product-info-time-wrapper">
+            	<div class="product-info-time-title">时间：</div> 
+                <div class="product-info-time">2019.08.10 09:30 - 08.11 17:00</div>
+            </div> 
+            <div class="vuene-wrapper">
+            	<div class="title">场馆：</div> 
+        		<div class="vuene-info-content">
+                	<div class="vuene-name">合肥滨湖国际会展中心</div> 
+                    <div class="address-name">合肥滨湖国际会展中心</div> 
+                    <div class="address-icon"></div> 
+                    <div class="check-map">查看地图</div>
+                    </div>
+                </div> <!----> 
+                <div class="login-show-wrapper">
+                <ul class="clearfix mr4">
+                	<li class="title">场次：</li> 
+                    <li class="screens">
+                        <div class="selectable-option active">8月10日场</div>
+                        <div class="selectable-option">联票</div>
+                        <div class="selectable-option">8月10夜场</div>
+                        <div class="selectable-option">8月11日场</div>
+                    </li>
+                 </ul> 
+                 <ul class="clearfix">
+                     <li class="title">价格：</li> 
+                     <li class="tickets">
+                 		<div class="selectable-option active">¥50(预售票)</div>
+                        <div class="selectable-option unable">¥60(现场票) 2019-08-10 00:00:00预售</div>
+                     </li>
+                 </ul> 
+                 <ul class="clearfix">
+                 	<li class="title">数量：</li> 
+                    <li class="num-content">
+                    	<div class="ticket-count">
+                        	<div class="count-reduce"></div> 
+                            <div class="count-number">1</div> 
+                            <div class="count-plus"></div>
+                        </div>
+                    </li>
+                 </ul> 
+                 <div class="product-buy-wrapper">
+                 	<div class="product-buy enable">
+                    	<div>立即购票</div>
+                    </div> <!----> 
+                    <div class="promo-btn" style="display: none;">我要拼团
+                        <div class="qr-code-wrapper" style="display: none;">
+                        	<div class="text-wrapper">
+                                <p>该功能仅限移动端享用</p> 
+                                <p>快扫描二维码发起拼团吧~</p>
+                            </div> 
+                        <div id="qrcode-promo" class="qrcode-promo"></div>
+                    </div>
+                 </div>
+                 <div class="want-wrapper">
+                 	<span class="want-icon"></span> 
+                    <div class="want-content">
+                    	<p>742人想去</p>
+                    </div>
+                  </div>
+            </div>
+       </div>
+       </div>
+    </div>
+</div>
+</body>
+</html>
